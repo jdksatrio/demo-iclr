@@ -1,0 +1,73 @@
+{
+  "config":{
+    "query_token_id":"[unused0]",
+    "doc_token_id":"[unused1]",
+    "query_token":"[Q]",
+    "doc_token":"[D]",
+    "ncells":null,
+    "centroid_score_threshold":null,
+    "ndocs":null,
+    "load_index_with_mmap":false,
+    "index_path":null,
+    "index_bsize":32,
+    "nbits":4,
+    "kmeans_niters":20,
+    "resume":false,
+    "pool_factor":1,
+    "clustering_mode":"hierarchical",
+    "protected_tokens":0,
+    "similarity":"cosine",
+    "bsize":64,
+    "accumsteps":1,
+    "lr":0.000005,
+    "maxsteps":10000,
+    "save_every":795,
+    "warmup":795,
+    "warmup_bert":null,
+    "relu":false,
+    "nway":2,
+    "use_ib_negatives":true,
+    "reranker":false,
+    "distillation_alpha":1.0,
+    "ignore_scores":false,
+    "model_name":"ACR_ColBERT_UniqueVariants",
+    "query_maxlen":32,
+    "attend_to_mask_tokens":false,
+    "interaction":"colbert",
+    "dim":128,
+    "doc_maxlen":256,
+    "mask_punctuation":true,
+    "checkpoint":"/Users/satrio/Documents/Masters Study/MSc_Project/demo/retrieve_acr/.ragatouille/colbert/indexes/acr_variants_index/checkpoints/colbert",
+    "triples":"unique_data/triples.train.colbert.jsonl",
+    "collection":[
+      "list with 1105 elements starting with...",
+      [
+        "Left lower quadrant pain. Suspected complication(s) of diverticulitis. Initial imaging.",
+        "Acute COPD exacerbation in immunocompetent patients with accompanying chest pain, fever, or leukocytosis, or a history of coronary artery disease, or heart failure. Initial imaging.",
+        "Acute respiratory illness in immunocompromised patients. Cough, dyspnea, chest pain, or fever. Initial Imaging."
+      ]
+    ],
+    "queries":"unique_data/queries.train.colbert.tsv",
+    "index_name":"acr_variants_index",
+    "overwrite":false,
+    "root":".ragatouille/",
+    "experiment":"colbert",
+    "index_root":null,
+    "name":"2025-06/30/12.27.10",
+    "rank":0,
+    "nranks":1,
+    "amp":true,
+    "gpus":0,
+    "avoid_fork_if_possible":false
+  },
+  "num_chunks":1,
+  "num_partitions":2048,
+  "num_embeddings":28718,
+  "avg_doclen":25.9891402715,
+  "RAGatouille":{
+    "index_config":{
+      "index_type":"PLAID",
+      "index_name":"acr_variants_index"
+    }
+  }
+}

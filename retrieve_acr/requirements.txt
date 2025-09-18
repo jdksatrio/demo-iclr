@@ -1,0 +1,5 @@
+ragatouille==0.0.9
+torch>=1.13.0
+transformers>=4.21.0
+numpy
+pandas 
